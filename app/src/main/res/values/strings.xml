@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">PROT</string>
+
+    <string name="navigation_drawer_open">Открыть меню</string>
+    <string name="navigation_drawer_close">Закрыть меню</string>
+
+    <string name="action_settings">Настройки</string>
+    <string name="title_activity_start">Старт</string>
+    <string name="title_activity_book">Учебник</string>
+    <string name="title_activity_settings">Настройки</string>
+    <string name="title_activity_help">Помощь</string>
+    <string name="title_activity_creators">Создатели</string>
+    <string name="title_activity_share">Поделиться</string>
+    <string-array name="language">
+        <item>C++</item>
+        <item>Python 3</item>
+    </string-array>
+    <string-array name="python_lesson_list">
+        <item>Урок 1</item>
+        <item>Урок 2</item>
+        <item>Урок 3</item>
+        <item>Урок 4</item>
+        <item>Урок 5</item>
+        <item>Урок 6</item>
+    </string-array>
+    <string-array name="python_book_str">
+        <item>"Hello, World!"</item>
+        <item>"Бинарные операции"</item>
+    </string-array>
+</resources>
