@@ -43,7 +43,7 @@
                     android:layout_height="match_parent"
                     android:orientation="vertical">
 
-                    <ListView
+                    <ExpandableListView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:id="@+id/cpp_list" />
@@ -64,4 +64,5 @@
             </FrameLayout>
         </LinearLayout>
     </TabHost>
+
 </RelativeLayout>
