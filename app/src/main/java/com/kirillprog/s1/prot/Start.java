@@ -17,7 +17,7 @@ import android.widget.TabHost;
 public class Start extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
-    int LOLKEKCH;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
