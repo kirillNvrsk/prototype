@@ -26,12 +26,19 @@ import java.util.Map;
 public class Book extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
-    private String[] mGroupsArray = new String[] { "Зима", "Весна", "Лето", "Осень" };
+    private String[] mGroupsArray1 = new String[] { "Зима", "Весна", "Лето", "Осень" };
 
-    private String[] mWinterMonthsArray = new String[] { "Декабрь"};
-    private String[] mSpringMonthsArray = new String[] { "Март"};
-    private String[] mSummerMonthsArray = new String[] { "Июнь"};
-    private String[] mAutumnMonthsArray = new String[] { "Сентябрь"};
+    private String[] mWinterMonthsArray1 = new String[] { "Декабрь12"};
+    private String[] mSpringMonthsArray1 = new String[] { "Март11"};
+    private String[] mSummerMonthsArray1 = new String[] { "Июнь10"};
+    private String[] mAutumnMonthsArray1 = new String[] { "Сентябрь9"};
+
+    private String[] mGroupsArray2 = new String[] { "Зима2", "Весна2", "Лето2", "Осень2" };
+
+    private String[] mWinterMonthsArray2 = new String[] { "Декабрь0"};
+    private String[] mSpringMonthsArray2 = new String[] { "Март1"};
+    private String[] mSummerMonthsArray2 = new String[] { "Июнь2"};
+    private String[] mAutumnMonthsArray2 = new String[] { "Сентябрь3"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,11 +46,6 @@ public class Book extends AppCompatActivity
         setContentView(R.layout.activity_book);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-        ListView listView_python = (ListView) findViewById(R.id.python_list);
-        String[] p_list = getResources().getStringArray(R.array.python_book_str);
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, p_list);
-        listView_python.setAdapter(adapter);
 
         TabHost tabHost = (TabHost) findViewById(R.id.book_list_1);
 
@@ -63,79 +65,127 @@ public class Book extends AppCompatActivity
 
         Map<String, String> map;
         // коллекция для групп
-        ArrayList<Map<String, String>> groupDataList = new ArrayList<>();
+        ArrayList<Map<String, String>> groupDataList1 = new ArrayList<>();
+        ArrayList<Map<String, String>> groupDataList2 = new ArrayList<>();
         // заполняем коллекцию групп из массива с названиями групп
 
-        for (String group : mGroupsArray) {
+        for (String group : mGroupsArray1) {
             // заполняем список атрибутов для каждой группы
             map = new HashMap<>();
             map.put("groupName", group); // время года
-            groupDataList.add(map);
+            groupDataList1.add(map);
+        }
+        for (String group : mGroupsArray2) {
+            // заполняем список атрибутов для каждой группы
+            map = new HashMap<>();
+            map.put("groupName", group); // время года
+            groupDataList2.add(map);
         }
 
         // список атрибутов групп для чтения
-        String groupFrom[] = new String[] { "groupName" };
+        String groupFrom1[] = new String[] { "groupName" };
         // список ID view-элементов, в которые будет помещены атрибуты групп
-        int groupTo[] = new int[] { android.R.id.text1 };
+        int groupTo1[] = new int[] { android.R.id.text1 };
+        // список атрибутов групп для чтения
+        String groupFrom2[] = new String[] { "groupName" };
+        // список ID view-элементов, в которые будет помещены атрибуты групп
+        int groupTo2[] = new int[] { android.R.id.text1 };
 
         // создаем общую коллекцию для коллекций элементов
-        ArrayList<ArrayList<Map<String, String>>> сhildDataList = new ArrayList<>();
+        ArrayList<ArrayList<Map<String, String>>> сhildDataList1 = new ArrayList<>();
+        ArrayList<ArrayList<Map<String, String>>> сhildDataList2 = new ArrayList<>();
 
         // в итоге получится сhildDataList = ArrayList<сhildDataItemList>
 
         // создаем коллекцию элементов для первой группы
-        ArrayList<Map<String, String>> сhildDataItemList = new ArrayList<>();
+        ArrayList<Map<String, String>> сhildDataItemList1 = new ArrayList<>();
+        ArrayList<Map<String, String>> сhildDataItemList2 = new ArrayList<>();
         // заполняем список атрибутов для каждого элемента
-        for (String month : mWinterMonthsArray) {
+        for (String month : mWinterMonthsArray1) {
             map = new HashMap<>();
             map.put("monthName", month); // название месяца
-            сhildDataItemList.add(map);
+            сhildDataItemList1.add(map);
+        }
+        сhildDataList1.add(сhildDataItemList1);
+        for (String month : mWinterMonthsArray2) {
+            map = new HashMap<>();
+            map.put("monthName", month); // название месяца
+            сhildDataItemList2.add(map);
         }
         // добавляем в коллекцию коллекций
-        сhildDataList.add(сhildDataItemList);
+        сhildDataList2.add(сhildDataItemList2);
 
         // создаем коллекцию элементов для второй группы
-        сhildDataItemList = new ArrayList<>();
-        for (String month : mSpringMonthsArray) {
+        сhildDataItemList1 = new ArrayList<>();
+        for (String month : mSpringMonthsArray1) {
             map = new HashMap<>();
             map.put("monthName", month);
-            сhildDataItemList.add(map);
+            сhildDataItemList1.add(map);
         }
-        сhildDataList.add(сhildDataItemList);
+        сhildDataList1.add(сhildDataItemList1);
+        сhildDataItemList2 = new ArrayList<>();
+        for (String month : mSpringMonthsArray2) {
+            map = new HashMap<>();
+            map.put("monthName", month);
+            сhildDataItemList2.add(map);
+        }
+        сhildDataList2.add(сhildDataItemList2);
 
         // создаем коллекцию элементов для третьей группы
-        сhildDataItemList = new ArrayList<>();
-        for (String month : mSummerMonthsArray) {
+        сhildDataItemList1 = new ArrayList<>();
+        for (String month : mSummerMonthsArray1) {
             map = new HashMap<>();
             map.put("monthName", month);
-            сhildDataItemList.add(map);
+            сhildDataItemList1.add(map);
         }
-        сhildDataList.add(сhildDataItemList);
+        сhildDataList1.add(сhildDataItemList1);
+        сhildDataItemList2 = new ArrayList<>();
+        for (String month : mSummerMonthsArray2) {
+            map = new HashMap<>();
+            map.put("monthName", month);
+            сhildDataItemList2.add(map);
+        }
+        сhildDataList2.add(сhildDataItemList2);
 
         // создаем коллекцию элементов для четвертой группы
-        сhildDataItemList = new ArrayList<>();
-        for (String month : mAutumnMonthsArray) {
+        сhildDataItemList1 = new ArrayList<>();
+        for (String month : mAutumnMonthsArray1) {
             map = new HashMap<>();
             map.put("monthName", month);
-            сhildDataItemList.add(map);
+            сhildDataItemList1.add(map);
         }
-        сhildDataList.add(сhildDataItemList);
+        сhildDataList1.add(сhildDataItemList1);
+        сhildDataItemList2 = new ArrayList<>();
+        for (String month : mAutumnMonthsArray2) {
+            map = new HashMap<>();
+            map.put("monthName", month);
+            сhildDataItemList2.add(map);
+        }
+        сhildDataList2.add(сhildDataItemList2);
 
         // список атрибутов элементов для чтения
-        String childFrom[] = new String[] { "monthName" };
+        String childFrom1[] = new String[] { "monthName" };
+        String childFrom2[] = new String[] { "monthName" };
         // список ID view-элементов, в которые будет помещены атрибуты
         // элементов
-        int childTo[] = new int[] { android.R.id.text1 };
+        int childTo1[] = new int[] { android.R.id.text1 };
+        int childTo2[] = new int[] { android.R.id.text1 };
 
-        SimpleExpandableListAdapter adapter1 = new SimpleExpandableListAdapter(
-                this, groupDataList,
-                android.R.layout.simple_expandable_list_item_1, groupFrom,
-                groupTo, сhildDataList, android.R.layout.simple_list_item_1,
-                childFrom, childTo);
+        SimpleExpandableListAdapter adapterCPP = new SimpleExpandableListAdapter(
+                this, groupDataList1,
+                android.R.layout.simple_expandable_list_item_1, groupFrom1,
+                groupTo1, сhildDataList1, android.R.layout.simple_list_item_1,
+                childFrom1, childTo1);
+        SimpleExpandableListAdapter adapterPYTHON = new SimpleExpandableListAdapter(
+                this, groupDataList2,
+                android.R.layout.simple_expandable_list_item_1, groupFrom2,
+                groupTo2, сhildDataList2, android.R.layout.simple_list_item_1,
+                childFrom2, childTo2);
 
-        ExpandableListView expandableListView = (ExpandableListView) findViewById(R.id.cpp_list);
-        expandableListView.setAdapter(adapter1);
-
+        ExpandableListView expandableListViewCPP = (ExpandableListView) findViewById(R.id.cpp_list);
+        expandableListViewCPP.setAdapter(adapterCPP);
+        ExpandableListView expandableListViewPYTHON = (ExpandableListView) findViewById(R.id.python_list);
+        expandableListViewPYTHON.setAdapter(adapterPYTHON);
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
