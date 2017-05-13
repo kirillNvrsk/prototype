@@ -11,6 +11,7 @@
     <string name="title_activity_help">Помощь</string>
     <string name="title_activity_creators">Создатели</string>
     <string name="title_activity_share">Поделиться</string>
+    <string name="aboutcat">У кота по имени Барсик четыре лапы, один хвост. Ему 5 лет</string>
     <string-array name="language">
         <item>C++</item>
         <item>Python 3</item>

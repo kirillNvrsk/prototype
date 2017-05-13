@@ -2,9 +2,6 @@ package com.kirillprog.s1.prot;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -13,9 +10,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.ArrayAdapter;
 import android.widget.ExpandableListView;
-import android.widget.ListView;
 import android.widget.SimpleExpandableListAdapter;
 import android.widget.TabHost;
 
@@ -33,9 +28,9 @@ public class Book extends AppCompatActivity
     private String[] mSummerMonthsArray1 = new String[] { "Июнь10"};
     private String[] mAutumnMonthsArray1 = new String[] { "Сентябрь9"};
 
-    private String[] mGroupsArray2 = new String[] { "Зима2", "Весна2", "Лето2", "Осень2" };
+    private String[] mGroupsArray2 = new String[] { "Синтаксис", "Ввод и вывод. Hello, World!", "Условия", "Арифметика. Типы. Math" };
 
-    private String[] mWinterMonthsArray2 = new String[] { "Декабрь0"};
+    private String[] mWinterMonthsArray2 = new String[] {""};
     private String[] mSpringMonthsArray2 = new String[] { "Март1"};
     private String[] mSummerMonthsArray2 = new String[] { "Июнь2"};
     private String[] mAutumnMonthsArray2 = new String[] { "Сентябрь3"};
