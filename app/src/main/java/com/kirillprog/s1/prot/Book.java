@@ -26,17 +26,7 @@ public class Book extends AppCompatActivity
 
     private String[] pythonLessonName;
     private String[] pythonLessonText;
-
-<<<<<<< HEAD
-
-=======
-    private String[] mGroupsArray2 = new String[] { "Синтаксис", "Ввод и вывод. Hello, World!", "Условия", "Арифметика. Типы. Math" };
-
-    private String[] mWinterMonthsArray2 = new String[] {""};
-    private String[] mSpringMonthsArray2 = new String[] { "Март1"};
-    private String[] mSummerMonthsArray2 = new String[] { "Июнь2"};
-    private String[] mAutumnMonthsArray2 = new String[] { "Сентябрь3"};
->>>>>>> origin/0.1
+    
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
