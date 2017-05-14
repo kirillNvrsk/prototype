@@ -2,9 +2,6 @@ package com.kirillprog.s1.prot;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -13,9 +10,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.ArrayAdapter;
 import android.widget.ExpandableListView;
-import android.widget.ListView;
 import android.widget.SimpleExpandableListAdapter;
 import android.widget.TabHost;
 
@@ -32,7 +27,16 @@ public class Book extends AppCompatActivity
     private String[] pythonLessonName;
     private String[] pythonLessonText;
 
+<<<<<<< HEAD
 
+=======
+    private String[] mGroupsArray2 = new String[] { "Синтаксис", "Ввод и вывод. Hello, World!", "Условия", "Арифметика. Типы. Math" };
+
+    private String[] mWinterMonthsArray2 = new String[] {""};
+    private String[] mSpringMonthsArray2 = new String[] { "Март1"};
+    private String[] mSummerMonthsArray2 = new String[] { "Июнь2"};
+    private String[] mAutumnMonthsArray2 = new String[] { "Сентябрь3"};
+>>>>>>> origin/0.1
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
