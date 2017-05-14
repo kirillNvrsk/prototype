@@ -1,4 +1,4 @@
-/*package com.kirillprog.s1.prot;
+package com.kirillprog.s1.prot;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -27,7 +27,9 @@ import android.widget.TextView;
 
 public class Test extends AppCompatActivity {
 
-    private static final String TAG = "Learn&&Programming";
+}
+
+    /*private static final String TAG = "Learn&&Programming";
     private int questionNumber = 0;
     private int numberOfCorrectAnswers = 0;
 
@@ -80,7 +82,7 @@ public class Test extends AppCompatActivity {
 
     private void loadNextQuestion() {
         clearResultBox();
-        correctAnswer = deriveCountryName(nextImage);
+        //correctAnswer = deriveCountryName(nextImage);
         Log.i("CORRECT_ANSWER", correctAnswer);
 
         removeOldAnswerOptionButtons();
@@ -122,12 +124,12 @@ public class Test extends AppCompatActivity {
 
     private void displayResultAsWrong() {
         resultBox.setText("Wrong!");
-        resultBox.setTextColor(getResources().getColor(R.color.incorrect_answer));
+        //resultBox.setTextColor(getResources().getColor(R.color.incorrect_answer));
     }
 
     private void displayResultAsCorrect() {
         resultBox.setText("Correct!");
-        resultBox.setTextColor(getResources().getColor(R.color.correct_answer));
+        //resultBox.setTextColor(getResources().getColor(R.color.correct_answer));
     }
 
     private void removeOldAnswerOptionButtons() {
@@ -143,7 +145,7 @@ public class Test extends AppCompatActivity {
     private String pickIncorrectCountryName() {
         String countryName = null;
         while(true) {
-            countryName = deriveCountryName(randomFlag());
+            //countryName = deriveCountryName(randomFlag());
             if(! correctAnswer.equalsIgnoreCase(countryName)) break;
         }
         return countryName;
@@ -172,13 +174,12 @@ public class Test extends AppCompatActivity {
     private void reloadQuizQuestions() {
         final int MAX_QUESTIONS = 10;
         for(int i=0; i< MAX_QUESTIONS;) {
-            if(! quizQuestionsList.contains(flagName)) {
-                quizQuestionsList.add(flagName);
+            //if(! quizQuestionsList.contains(flagName)) {
+             //   quizQuestionsList.add(flagName);
                 i++;
             }
         }
-    }
-}*/
+    }*/
 
 
 

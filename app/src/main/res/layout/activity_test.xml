@@ -22,6 +22,10 @@
         android:text="Question X of N" />
 
 
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="340dp" />
+
     <TableLayout android:id="@+id/buttonTableLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -31,23 +35,13 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            ]]><Button
-        android:id="@+id/button1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Button" />
 
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Button" />
 
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Button" /></TableLayout>
+
+
+        ]]>
+
+    </TableLayout>
 
     <TextView android:id="@+id/resultTextView"
         android:layout_width="match_parent"

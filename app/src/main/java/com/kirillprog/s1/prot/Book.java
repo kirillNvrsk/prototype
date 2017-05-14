@@ -26,7 +26,7 @@ public class Book extends AppCompatActivity
 
     private String[] pythonLessonName;
     private String[] pythonLessonText;
-    
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
