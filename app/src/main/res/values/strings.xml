@@ -15,16 +15,4 @@
         <item>C++</item>
         <item>Python 3</item>
     </string-array>
-    <string-array name="python_lesson_list">
-        <item>Урок 1</item>
-        <item>Урок 2</item>
-        <item>Урок 3</item>
-        <item>Урок 4</item>
-        <item>Урок 5</item>
-        <item>Урок 6</item>
-    </string-array>
-    <string-array name="python_book_str">
-        <item>"Hello, World!"</item>
-        <item>"Бинарные операции"</item>
-    </string-array>
 </resources>

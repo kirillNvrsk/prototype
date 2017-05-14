@@ -10,9 +10,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TabHost;
+import android.widget.TextView;
+
+import junit.framework.Test;
 
 public class Start extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -24,13 +29,19 @@ public class Start extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start);
         ListView listView_python = (ListView) findViewById(R.id.python_lesson);
-        String[] p_lesson = getResources().getStringArray(R.array.python_lesson_list);
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, p_lesson);
-        listView_python.setAdapter(adapter);
+        ListView listView_cpp = (ListView) findViewById(R.id.cpp_lesson);
+        String[] p_lesson = getResources().getStringArray(R.array.python_lesson_name);
+        final String[] c_lesson = getResources().getStringArray(R.array.python_lesson_name);
+        ArrayAdapter<String> pythonAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, p_lesson);
+        ArrayAdapter<String> cppAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, c_lesson);
+
+        listView_python.setAdapter(pythonAdapter);
+        listView_cpp.setAdapter(cppAdapter);
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        TabHost tabHost = (TabHost) findViewById(R.id.lang);
+        final TabHost tabHost = (TabHost) findViewById(R.id.lang);
 
         tabHost.setup();
 
@@ -46,7 +57,19 @@ public class Start extends AppCompatActivity
         tabHost.addTab(tabSpec);
         tabHost.setCurrentTab(0);
 
-
+        /*listView_cpp.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View itemClicked, int position,
+                                    long id) {
+                TextView textView = (TextView) itemClicked;
+                String strText = textView.getText().toString(); // получаем текст нажатого элемента
+                int num = Integer.parseInt(strText);
+                Intent intent = new Intent(Start.this, Test.class);
+                intent.putExtra("num", num);
+                intent.putExtra("lang", tabHost.getCurrentTabTag());
+                startActivity(intent);
+            }
+        });*/
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(

@@ -26,19 +26,13 @@ import java.util.Map;
 public class Book extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
-    private String[] mGroupsArray1 = new String[] { "Зима", "Весна", "Лето", "Осень" };
+    private String[] cppLessonName;
+    private String[] cppLessonText;
 
-    private String[] mWinterMonthsArray1 = new String[] { "Декабрь12"};
-    private String[] mSpringMonthsArray1 = new String[] { "Март11"};
-    private String[] mSummerMonthsArray1 = new String[] { "Июнь10"};
-    private String[] mAutumnMonthsArray1 = new String[] { "Сентябрь9"};
+    private String[] pythonLessonName;
+    private String[] pythonLessonText;
 
-    private String[] mGroupsArray2 = new String[] { "Зима2", "Весна2", "Лето2", "Осень2" };
 
-    private String[] mWinterMonthsArray2 = new String[] { "Декабрь0"};
-    private String[] mSpringMonthsArray2 = new String[] { "Март1"};
-    private String[] mSummerMonthsArray2 = new String[] { "Июнь2"};
-    private String[] mAutumnMonthsArray2 = new String[] { "Сентябрь3"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,19 +57,26 @@ public class Book extends AppCompatActivity
         tabHost.setCurrentTab(0);
 
 
+        cppLessonName = getResources().getStringArray(R.array.cpp_book_name);
+        cppLessonText = getResources().getStringArray(R.array.cpp_book_str);
+
+        pythonLessonName = getResources().getStringArray(R.array.python_lesson_name);
+        pythonLessonText = getResources().getStringArray(R.array.python_lesson_name);
+
+
         Map<String, String> map;
         // коллекция для групп
         ArrayList<Map<String, String>> groupDataList1 = new ArrayList<>();
         ArrayList<Map<String, String>> groupDataList2 = new ArrayList<>();
         // заполняем коллекцию групп из массива с названиями групп
 
-        for (String group : mGroupsArray1) {
+        for (String group : cppLessonName) {
             // заполняем список атрибутов для каждой группы
             map = new HashMap<>();
             map.put("groupName", group); // время года
             groupDataList1.add(map);
         }
-        for (String group : mGroupsArray2) {
+        for (String group : pythonLessonName) {
             // заполняем список атрибутов для каждой группы
             map = new HashMap<>();
             map.put("groupName", group); // время года
@@ -91,81 +92,31 @@ public class Book extends AppCompatActivity
         // список ID view-элементов, в которые будет помещены атрибуты групп
         int groupTo2[] = new int[] { android.R.id.text1 };
 
-        // создаем общую коллекцию для коллекций элементов
         ArrayList<ArrayList<Map<String, String>>> сhildDataList1 = new ArrayList<>();
         ArrayList<ArrayList<Map<String, String>>> сhildDataList2 = new ArrayList<>();
 
-        // в итоге получится сhildDataList = ArrayList<сhildDataItemList>
-
-        // создаем коллекцию элементов для первой группы
         ArrayList<Map<String, String>> сhildDataItemList1 = new ArrayList<>();
         ArrayList<Map<String, String>> сhildDataItemList2 = new ArrayList<>();
-        // заполняем список атрибутов для каждого элемента
-        for (String month : mWinterMonthsArray1) {
-            map = new HashMap<>();
-            map.put("monthName", month); // название месяца
-            сhildDataItemList1.add(map);
-        }
-        сhildDataList1.add(сhildDataItemList1);
-        for (String month : mWinterMonthsArray2) {
-            map = new HashMap<>();
-            map.put("monthName", month); // название месяца
-            сhildDataItemList2.add(map);
-        }
-        // добавляем в коллекцию коллекций
-        сhildDataList2.add(сhildDataItemList2);
 
-        // создаем коллекцию элементов для второй группы
-        сhildDataItemList1 = new ArrayList<>();
-        for (String month : mSpringMonthsArray1) {
+        for(String lessons : cppLessonText){
+            сhildDataItemList1 = new ArrayList<>();
             map = new HashMap<>();
-            map.put("monthName", month);
+            map.put("lessonName", lessons);
             сhildDataItemList1.add(map);
-        }
-        сhildDataList1.add(сhildDataItemList1);
-        сhildDataItemList2 = new ArrayList<>();
-        for (String month : mSpringMonthsArray2) {
-            map = new HashMap<>();
-            map.put("monthName", month);
-            сhildDataItemList2.add(map);
-        }
-        сhildDataList2.add(сhildDataItemList2);
+            сhildDataList1.add(сhildDataItemList1);
 
-        // создаем коллекцию элементов для третьей группы
-        сhildDataItemList1 = new ArrayList<>();
-        for (String month : mSummerMonthsArray1) {
-            map = new HashMap<>();
-            map.put("monthName", month);
-            сhildDataItemList1.add(map);
         }
-        сhildDataList1.add(сhildDataItemList1);
-        сhildDataItemList2 = new ArrayList<>();
-        for (String month : mSummerMonthsArray2) {
+        for(String lessons : pythonLessonText){
+            сhildDataItemList2 = new ArrayList<>();
             map = new HashMap<>();
-            map.put("monthName", month);
+            map.put("lessonName", lessons);
             сhildDataItemList2.add(map);
-        }
-        сhildDataList2.add(сhildDataItemList2);
+            сhildDataList2.add(сhildDataItemList2);
 
-        // создаем коллекцию элементов для четвертой группы
-        сhildDataItemList1 = new ArrayList<>();
-        for (String month : mAutumnMonthsArray1) {
-            map = new HashMap<>();
-            map.put("monthName", month);
-            сhildDataItemList1.add(map);
         }
-        сhildDataList1.add(сhildDataItemList1);
-        сhildDataItemList2 = new ArrayList<>();
-        for (String month : mAutumnMonthsArray2) {
-            map = new HashMap<>();
-            map.put("monthName", month);
-            сhildDataItemList2.add(map);
-        }
-        сhildDataList2.add(сhildDataItemList2);
-
         // список атрибутов элементов для чтения
-        String childFrom1[] = new String[] { "monthName" };
-        String childFrom2[] = new String[] { "monthName" };
+        String childFrom1[] = new String[] { "lessonName" };
+        String childFrom2[] = new String[] { "lessonName" };
         // список ID view-элементов, в которые будет помещены атрибуты
         // элементов
         int childTo1[] = new int[] { android.R.id.text1 };
@@ -209,16 +160,12 @@ public class Book extends AppCompatActivity
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.book, menu);
         return true;
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
@@ -232,7 +179,6 @@ public class Book extends AppCompatActivity
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
-        // Handle navigation view item clicks here.
         int id = item.getItemId();
 
         if (id == R.id.nav_start) {

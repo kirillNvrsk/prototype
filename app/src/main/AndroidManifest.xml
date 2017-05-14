@@ -21,33 +21,37 @@
         <activity
             android:name=".Start"
             android:label="@string/title_activity_start"
-            android:theme="@style/AppTheme.NoActionBar"/>
-
+            android:noHistory="true"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Book"
             android:label="@string/title_activity_book"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:noHistory="true"/>
+            android:noHistory="true"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Settings"
             android:label="@string/title_activity_settings"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:noHistory="true"/>
+            android:noHistory="true"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Help"
             android:label="@string/title_activity_help"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:noHistory="true"/>
+            android:noHistory="true"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Creators"
             android:label="@string/title_activity_creators"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:noHistory="true"/>
+            android:noHistory="true"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Share"
             android:label="@string/title_activity_share"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:noHistory="true"></activity>
+            android:noHistory="true"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Test"
+            android:label="Тест"
+            android:noHistory="true"/>
     </application>
 
 </manifest>
