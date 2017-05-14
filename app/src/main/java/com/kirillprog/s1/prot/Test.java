@@ -1,33 +1,10 @@
-/*package com.kirillprog.s1.prot;
+package com.kirillprog.s1.prot;
 
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
-import java.util.Random;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.app.AlertDialog;
-import android.content.Context;
-import android.content.DialogInterface;
-import android.content.DialogInterface.OnDismissListener;
-import android.content.res.AssetManager;
-import android.graphics.drawable.Drawable;
-import android.os.Handler;
-import android.util.Log;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.View.OnClickListener;
-import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.TableLayout;
-import android.widget.TableRow;
-import android.widget.TextView;
 
-public class Test extends AppCompatActivity {
+public class Test extends AppCompatActivity {}
 
-    private static final String TAG = "Learn&&Programming";
+      /*private static final String TAG = "Learn&&Programming";
     private int questionNumber = 0;
     private int numberOfCorrectAnswers = 0;
 
@@ -178,8 +155,7 @@ public class Test extends AppCompatActivity {
             }
         }
     }
-}*/
-
-
+}
+/*/
 
 

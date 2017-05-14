@@ -19,35 +19,12 @@
         android:gravity="center"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
-        android:text="Question X of N" />
+         />
+    <ListView
+           android:layout_width="match_parent"
+           android:layout_height="340dp" />
 
 
-    <TableLayout android:id="@+id/buttonTableLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:stretchColumns="0,1,2"><![CDATA[
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            ]]><Button
-        android:id="@+id/button1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Button" />
-
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Button" />
-
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Button" /></TableLayout>
 
     <TextView android:id="@+id/resultTextView"
         android:layout_width="match_parent"
@@ -55,10 +32,10 @@
         android:layout_marginTop="10dp"
         android:gravity="center"
         android:textStyle="bold"
-        android:text="Sample Text"/>
+        />
 
     <Button
-        android:text="Закончить тест"
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/toStart" />

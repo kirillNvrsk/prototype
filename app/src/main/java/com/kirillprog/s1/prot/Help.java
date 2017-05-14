@@ -2,9 +2,6 @@ package com.kirillprog.s1.prot;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -78,10 +75,6 @@ public class Help extends AppCompatActivity
             startActivity(intent);
         } else if (id == R.id.nav_book) {
             Intent intent = new Intent(Help.this, Book.class);
-            startActivity(intent);
-
-        } else if (id == R.id.nav_settings) {
-            Intent intent = new Intent(Help.this, Settings.class);
             startActivity(intent);
 
         } else if (id == R.id.nav_help) {

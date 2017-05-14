@@ -10,14 +10,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TabHost;
-import android.widget.TextView;
-
-import junit.framework.Test;
 
 public class Start extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -126,9 +121,6 @@ public class Start extends AppCompatActivity
             Intent intent = new Intent(Start.this, Book.class);
             startActivity(intent);
 
-        } else if (id == R.id.nav_settings) {
-            Intent intent = new Intent(Start.this, Settings.class);
-            startActivity(intent);
 
         } else if (id == R.id.nav_help) {
             Intent intent = new Intent(Start.this, Help.class);
