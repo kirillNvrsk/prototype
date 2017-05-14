@@ -25,6 +25,29 @@
            android:layout_height="340dp" />
 
 
+<<<<<<< HEAD
+=======
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="340dp" />
+
+    <TableLayout android:id="@+id/buttonTableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:stretchColumns="0,1,2"><![CDATA[
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+
+
+
+        ]]>
+
+    </TableLayout>
+>>>>>>> origin/0.1
 
     <TextView android:id="@+id/resultTextView"
         android:layout_width="match_parent"
