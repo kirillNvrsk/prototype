@@ -1,4 +1,394 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <string-array name="python_lesson_name">
+        <item>Структура программы</item>
+        <item>Основные типы данных</item>
+        <item>Арифметическике операции</item>
+        <item>Библиотечные функции</item>
+    </string-array>
+    <integer-array name="python_test_1_correct_answer">
+        <item>0</item>
+        <item>3</item>
+        <item>2</item>
+        <item>1</item>
+        <item>0</item>
+        <item>2</item>
+        <item>0</item>
+        <item>1</item>
+        <item>3</item>
+        <item>2</item>
+    </integer-array>
+    <string-array name="python_test_1_question">
+        <item>"что выведет следующий оператор : \n cin &lt;&lt; \"Hello World\\n\";" </item>
+        <item>w</item>
+        <item>e</item>
+        <item>r</item>
+        <item>t</item>
+        <item>ry</item>
+        <item>rr</item>
+        <item>r</item>
+        <item>ry</item>
+        <item>r</item>
+    </string-array>
+    <integer-array name="python_test_2_correct_answer">
+        <item>0</item>
+        <item>3</item>
+        <item>2</item>
+        <item>1</item>
+        <item>0</item>
+        <item>2</item>
+        <item>0</item>
+        <item>1</item>
+        <item>3</item>
+        <item>2</item>
+    </integer-array>
+    <string-array name="python_test_2_question">
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+    <integer-array name="python_test_3_correct_answer">
+        <item>0</item>
+        <item>3</item>
+        <item>2</item>
+        <item>1</item>
+        <item>0</item>
+        <item>2</item>
+        <item>0</item>
+        <item>1</item>
+        <item>3</item>
+        <item>2</item>
+    </integer-array>
+    <string-array name="python_test_3_question">
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+    <integer-array name="python_test_4_correct_answer">
+        <item>0</item>
+        <item>3</item>
+        <item>2</item>
+        <item>1</item>
+        <item>0</item>
+        <item>2</item>
+        <item>0</item>
+        <item>1</item>
+        <item>3</item>
+        <item>2</item>
+    </integer-array>
+    <string-array name="python_test_4_question">
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+    <integer-array name="python_test_5_correct_answer">
+        <item>0</item>
+        <item>3</item>
+        <item>2</item>
+        <item>1</item>
+        <item>0</item>
+        <item>2</item>
+        <item>0</item>
+        <item>1</item>
+        <item>3</item>
+        <item>2</item>
+    </integer-array>
+    <string-array name="python_test_5_question">
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+    <integer-array name="python_test_6_correct_answer">
+        <item>0</item>
+        <item>3</item>
+        <item>2</item>
+        <item>1</item>
+        <item>0</item>
+        <item>2</item>
+        <item>0</item>
+        <item>1</item>
+        <item>3</item>
+        <item>2</item>
+    </integer-array>
+    <string-array name="python_test_6_question">
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+    <integer-array name="python_test_7_correct_answer">
+        <item>0</item>
+        <item>3</item>
+        <item>2</item>
+        <item>1</item>
+        <item>0</item>
+        <item>2</item>
+        <item>0</item>
+        <item>1</item>
+        <item>3</item>
+        <item>2</item>
+    </integer-array>
+    <string-array name="python_test_7_question">
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+    <integer-array name="python_test_8_correct_answer">
+        <item>0</item>
+        <item>3</item>
+        <item>2</item>
+        <item>1</item>
+        <item>0</item>
+        <item>2</item>
+        <item>0</item>
+        <item>1</item>
+        <item>3</item>
+        <item>2</item>
+    </integer-array>
+    <string-array name="python_test_8_question">
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+    <integer-array name="python_test_9_correct_answer">
+        <item>0</item>
+        <item>3</item>
+        <item>2</item>
+        <item>1</item>
+        <item>0</item>
+        <item>2</item>
+        <item>0</item>
+        <item>1</item>
+        <item>3</item>
+        <item>2</item>
+    </integer-array>
+    <string-array name="python_test_9_question">
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+    <integer-array name="python_test_10_correct_answer">
+        <item>0</item>
+        <item>3</item>
+        <item>2</item>
+        <item>1</item>
+        <item>0</item>
+        <item>2</item>
+        <item>0</item>
+        <item>1</item>
+        <item>3</item>
+        <item>2</item>
+    </integer-array>
+    <string-array name="python_test_10_question">
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+    <integer-array name="python_test_11_correct_answer">
+        <item>0</item>
+        <item>3</item>
+        <item>2</item>
+        <item>1</item>
+        <item>0</item>
+        <item>2</item>
+        <item>0</item>
+        <item>1</item>
+        <item>3</item>
+        <item>2</item>
+    </integer-array>
+    <string-array name="python_test_11_question">
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+    <integer-array name="python_test_12_correct_answer">
+        <item>0</item>
+        <item>3</item>
+        <item>2</item>
+        <item>1</item>
+        <item>0</item>
+        <item>2</item>
+        <item>0</item>
+        <item>1</item>
+        <item>3</item>
+        <item>2</item>
+    </integer-array>
+    <string-array name="python_test_12_question">
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+    <string-array name="python_book_str">
+        <item>"Структура программы
+Рассмотрим  первый,  самый  простой,  пример  программы  на  C++.  Программа
+выводит всем известное сообщение на экран. Вот как она выглядит:
+\t#include &lt;iostream&gt;
+\tusing namespace std;
+\tint main()  {
+ \t\tcout &lt;&lt; "Hello world \n";
+ \t\treturn 0; \t
+}
+Несмотря  на  свой  небольшой  размер,  этот  пример  демонстрирует  типичную
+структуру программы на C++. Рассмотрим эту структуру в деталях.
+Функции
+Функции  представляют  собой  основу,  на  которой  строится  любая  программа С++. Наша программа состоит из единственной функции с названием main().  В  состав  этой  функции  не  входят  две  первые  строчки  кода,  начинающиеся  со слов  #include  и  using .
+Имена функций
+Круглые  скобки,  идущие  вслед  за  именем  main(),  являются  отличительной чертой  функций:  если  бы  их  не  было,  то  компилятор  не  смог  бы  отличить  имя переменной  или  другого элемента  программы  от  имени  функции.  Когда  мы будем  использовать  имена  функций  в  объяснениях,  мы  всегда  будем  придерживаться  соглашения,  принятого  в  C++, и ставить круглые скобки после имени  функции.
+Слово  int,  предваряющее  имя  функции,  указывает  на  то,  что  эта  функция возвращает  значение  типа  int.
+Тело функции
+Тело  функции  заключено  в  фигурные  скобки.  Фигурные  скобки  играют  ту  же
+роль,  что  и  ключевые  слова  BEGIN  и  END,  встречающиеся  в  некоторых  других
+языках  программирования:  они  определяют  границы  блока  операторов  програм-
+мы.  Фигурные  скобки,  обрамляющие  тело  функции,  обязательны.  В  нашем  при-
+мере  тело  функции  состоит  всего  лишь  из  двух  операторов:  один  из  них  начина-
+ется  словом  cout,  другой  —  словом  return.  Разумеется,  функция  может  включать
+в себя и большее число операторов.
+Функция main()
+Когда  программа  на  языке  C++  запускается  на  выполнение,  первым  исполняемым оператором  становится  первый  оператор  функции  main().  Если  в  программе  не  содержится функции с  именем  main(),  то  при  попытке  запустить  такую  программу  будет выведено сообщение об ошибке.
+В  большинстве  программ,  написанных  на  C++,  реальные  действия,  выполняемые  этими программами,  сводятся  к  вызову  функцией  main()  методов  различных  объектов.
+Операторы
+Оператор является структурной единицей программы на C++. В нашей программе
+содержатся 2 оператора:
+\t\tcout &lt;&lt; "Hello world \n";
+\t\treturn 0;
+Окончание  оператора  обозначается  знаком  «точка  с  запятой».  Этот  знак  является  обязательным,  однако  чаще  всего  забывается  в  процессе  программирования. Если  вы  забудете  поставить точку  с  запятой  в  конце  оператора,  то  в  большинстве  случаев компилятор возвратит ошибку.
+Второй  оператор  нашей  программы  return  0;  является  указанием  функции main()  возвратить значение  0  вызывающему  окружению.
+Разделяющие знаки
+На самом деле компилятор игнорирует практически все разделяющие знаки(пробелы,  символы  возврата  каретки  и перехода  на  другую  строку,  табуляция  и  перевод страницы).  Вы  можете  записать несколько  операторов  на  одной  строке,  разделить  их  любым  количеством разделяющих знаков,  и  компилятор  во  всех  случаях  обработает  их одинаково.
+Вывод с использованием cout
+Как мы уже видели, оператор
+cout &lt;&lt; "У каждой эпохи свой язык\n";
+выводит  на  экран  строку,  заключенную  в  кавычки.  Каким  образом  работает  этот оператор?  Чтобы  полностью  это  понять,  необходимо  знать  объекты,  перегрузку операций  и  другие аспекты,  рассматриваемые  позже.  Пока  мы  ограничимся  лишь краткими пояснениями.
+Идентификатор  cout  на  самом  деле  является  объектом  C++,  предназначенным  для  работы со  стандартным  потоком  вывода.  Операция  &lt;&lt;  называется  операцией  вставки.  Она  копирует  содержимое  переменной,  стоящей  в  правой  ее  части,  в  объект,  содержащийся  в  левой  ее части.
+Строковые константы
+Фраза  "У  каждой  эпохи  свой  язык\n"  является  примером  строковой  константы.
+Как  вы,  возможно,  знаете,  константе,  в  отличие  от  выражения,  нельзя  придавать
+новое  значение  в  процессе  выполнения  программы.  Значение  константы  задается  один  раз и  сохраняется  на  протяжении  всего  процесса  выполнения  программы.
+Символ  '\n'  в  конце  строковой  константы  является  примером  управляющей или  escape-последовательности.  В  данном  случае  такая  последовательность  означает,  что  следующий вывод  текста  начнется  с  новой  строки.  Это  нужно,  например,  для  того,  чтобы  фраза  «Press  any  key  to  continue»  или  аналогичная,  вставляемая  большинством  компиляторов  после завершения  программы,  выводилась на  новой  строке.
+Директивы
+Первые  две  строки,  с  которых  начинается  программа  FIRST,  являются  директивами.  Первая  строка  представляет  собой  директиву  препроцессора,  вторая  —  директиву  using.  Директивы  нельзя  считать  частью  языка  C++,  однако  их  использование является необходимым.
+Директивы препроцессора
+Первая строка программы
+#include &lt;iostream&gt;
+не входит  в  тело  какой-либо  из  функций  и  не  заканчивается  точкой  с  запятой  (;),
+как  операторы  C++ и начинается  с  символа  #.  Такая  строка  называется  директивой  препроцессора.  Вспомните,  что  любой  оператор  является  указанием  компьютеру  совершить  какое-либо  действие,  например  сложить два  числа  или  вывести  на  печать  предложение.
+Директива  #include  указывает  препроцессору(специальной  части  компилятора,  обрабатывающей  подобные  директивы  перед  началом компиляции кода)  включить  в  компилируемый
+файл  содержимое  другого  файла.  Другими  словами,  это  содержимое  подставляется  на  место директивы  #include.  Директива  #include  действует  так  же,  как  действуете  вы,  копируя необходимый  текст  в  текстовом  редакторе,  а  затем  вставляя его в нужное место вашего файла.
+Файл,  включаемый  с  помощью  директивы  #include,  обычно  называют  заголовочным файлом.  Директива using
+Каждую  программу  на  языке  C++  можно  разбить  на  несколько  так  называемых
+пространств  имен.  Пространством  имен  называется  область  программы,  в  кото-
+рой  распознается  определенная  совокупность  имен.  Эти  имена  неизвестны  за
+пределами данного пространства имен. Директива
+using namespace std;
+означает,  что  все  определенные  ниже  имена  в  программе  будут  относиться  к  про-
+странству  имен  с  именем  std.  Различные  элементы  программы  описаны  с  ис-
+пользованием  пространства  имен  std,  например  переменная  cout.  Если  не  ис-
+пользовать  директиву  using,  то  к  этим  элементам  программы  придется  каждый
+раз добавлять имя std:
+
+std::cout &lt;&lt; "У каждой эпохи свой язык\n";
+
+Для  того  чтобы  не  дописывать  std::  каждый  раз  перед  именем  переменной,
+используется  директива  using.
+Комментарии
+Комментарии  являются  важной  частью  любой  программы.  Они  помогают  разо-
+браться  в  действиях  программы  как  разработчику,  так  и  любому  другому  челове-
+ку,  читающему  код.  Компилятор  игнорирует  все,  что  помечено  в  программе  как
+комментарий,  поэтому  комментарии  не  включаются  в  содержимое  исполняемого
+файла и никак не влияют на ход исполнения программы.
+Синтаксис комментариев
+Комментарии  начинаются  с  двойной  косой  черты  //  и  заканчиваются  концом
+строки  (этот  случай  как  раз  является  примером,  когда  компилятор  не  игнорирует  разделяющие  символы).  Комментарий  может  начинаться  как  в  начале  строки,  так  и  после  какого-либо  оператора.
+В C++ существует еще один вид комментариев:
+ /* устаревший вид комментариев */
+ Этот  вид  комментариев  —  единственный,  применяемый  в  языке  C.  Призна-
+ком  его  начала  служит  последовательность  символов  /*,  а  заканчивается  ком-
+ментарий  последовательностью  */  (а  не  символом  конца  строки).  Последова-
+тельности  /*  и  */  труднее  набирать,  поскольку  /  относится  к  нижнему  регистру,
+а  *  —  к  верхнему.  Кроме  того,  неудобно  каждый  раз  набирать  два  разных  симво-
+ла.
+Комментарий в стиле /* */ можно вставлять в любое место строки:
+
+"</item>
+        <item>"Hello, World"</item>
+        <item>"Hello, World"</item>
+        <item>"Hello, World"</item>
+    </string-array>
 </resources>

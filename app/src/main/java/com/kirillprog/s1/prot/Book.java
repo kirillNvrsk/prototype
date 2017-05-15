@@ -182,9 +182,6 @@ public class Book extends AppCompatActivity
             //Intent intent = new Intent(Start.this, Book.class);
             //startActivity(intent);
 
-        } else if (id == R.id.nav_settings) {
-            Intent intent = new Intent(Book.this, Settings.class);
-            startActivity(intent);
 
         } else if (id == R.id.nav_help) {
             Intent intent = new Intent(Book.this, Help.class);

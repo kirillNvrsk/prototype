@@ -17,8 +17,6 @@ import android.widget.ListView;
 import android.widget.TabHost;
 import android.widget.TextView;
 
-import junit.framework.Test;
-
 public class Start extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -146,9 +144,6 @@ public class Start extends AppCompatActivity
             Intent intent = new Intent(Start.this, Book.class);
             startActivity(intent);
 
-        } else if (id == R.id.nav_settings) {
-            Intent intent = new Intent(Start.this, Settings.class);
-            startActivity(intent);
 
         } else if (id == R.id.nav_help) {
             Intent intent = new Intent(Start.this, Help.class);

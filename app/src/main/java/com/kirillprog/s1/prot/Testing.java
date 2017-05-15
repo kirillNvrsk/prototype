@@ -203,9 +203,10 @@ public class Testing extends AppCompatActivity {
             answers = new String[][][]{
                     {{"Hello World", "Hello", "World", "Это не оператор вывода"},
                             {"Функция ничего не возвращает", "переменная тип int", "Функция возвращает тип int"},
-                            {"Зависит от использования", "no", "may be", "not stated"},
-                            {"yes", "no", "may be", "not stated"},
-                            {"yes", "no", "may be", "not stated"},
+                            {"Зависит от использования", "Ничего", "Переводит каретку на новую строку", "переводит каретку на символ назад"},
+                            {"Произойдет ошибка компиляции", "/*cout << \"Samsung\";*/", "\"Samsung\"", "Ничего, т. к. данная строчка - комментарий"},
+                            {"Область программы,в которой распознается определенная совокупность имен",
+                                    "Тип переменной", "may be", "not stated"},
                             {"yes", "no", "may be", "not stated"},
                             {"yes", "no", "may be", "not stated"},
                             {"yes", "no", "may be", "not stated"},
