@@ -1,12 +1,288 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array name="cpp_book_name">
+    <string-array name="cpp_lesson_name">
         <item>Структура программы</item>
         <item>Основные типы данных</item>
         <item>Арифметическике операции</item>
         <item>Библиотечные функции</item>
     </string-array>
+    <integer-array name="cpp_test_1_correct_answer">
+        <item>0</item>
+        <item>3</item>
+        <item>2</item>
+        <item>1</item>
+        <item>0</item>
+        <item>2</item>
+        <item>0</item>
+        <item>1</item>
+        <item>3</item>
+        <item>2</item>
+    </integer-array>
     <string-array name="cpp_test_1_question">
+        <item>"что выведет следующий оператор : \n cin &lt;&lt; \"Hello World\\n\";" </item>
+        <item>w</item>
+        <item>e</item>
+        <item>r</item>
+        <item>t</item>
+        <item>ry</item>
+        <item>rr</item>
+        <item>r</item>
+        <item>ry</item>
+        <item>r</item>
+    </string-array>
+    <integer-array name="cpp_test_2_correct_answer">
+        <item>0</item>
+        <item>3</item>
+        <item>2</item>
+        <item>1</item>
+        <item>0</item>
+        <item>2</item>
+        <item>0</item>
+        <item>1</item>
+        <item>3</item>
+        <item>2</item>
+    </integer-array>
+    <string-array name="cpp_test_2_question">
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+    <integer-array name="cpp_test_3_correct_answer">
+    <item>0</item>
+    <item>3</item>
+    <item>2</item>
+    <item>1</item>
+    <item>0</item>
+    <item>2</item>
+    <item>0</item>
+    <item>1</item>
+    <item>3</item>
+    <item>2</item>
+</integer-array>
+    <string-array name="cpp_test_3_question">
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+    <integer-array name="cpp_test_4_correct_answer">
+    <item>0</item>
+    <item>3</item>
+    <item>2</item>
+    <item>1</item>
+    <item>0</item>
+    <item>2</item>
+    <item>0</item>
+    <item>1</item>
+    <item>3</item>
+    <item>2</item>
+</integer-array>
+    <string-array name="cpp_test_4_question">
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+    <integer-array name="cpp_test_5_correct_answer">
+    <item>0</item>
+    <item>3</item>
+    <item>2</item>
+    <item>1</item>
+    <item>0</item>
+    <item>2</item>
+    <item>0</item>
+    <item>1</item>
+    <item>3</item>
+    <item>2</item>
+</integer-array>
+    <string-array name="cpp_test_5_question">
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+    <integer-array name="cpp_test_6_correct_answer">
+    <item>0</item>
+    <item>3</item>
+    <item>2</item>
+    <item>1</item>
+    <item>0</item>
+    <item>2</item>
+    <item>0</item>
+    <item>1</item>
+    <item>3</item>
+    <item>2</item>
+</integer-array>
+    <string-array name="cpp_test_6_question">
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+    <integer-array name="cpp_test_7_correct_answer">
+    <item>0</item>
+    <item>3</item>
+    <item>2</item>
+    <item>1</item>
+    <item>0</item>
+    <item>2</item>
+    <item>0</item>
+    <item>1</item>
+    <item>3</item>
+    <item>2</item>
+</integer-array>
+    <string-array name="cpp_test_7_question">
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+    <integer-array name="cpp_test_8_correct_answer">
+    <item>0</item>
+    <item>3</item>
+    <item>2</item>
+    <item>1</item>
+    <item>0</item>
+    <item>2</item>
+    <item>0</item>
+    <item>1</item>
+    <item>3</item>
+    <item>2</item>
+</integer-array>
+    <string-array name="cpp_test_8_question">
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+    <integer-array name="cpp_test_9_correct_answer">
+    <item>0</item>
+    <item>3</item>
+    <item>2</item>
+    <item>1</item>
+    <item>0</item>
+    <item>2</item>
+    <item>0</item>
+    <item>1</item>
+    <item>3</item>
+    <item>2</item>
+</integer-array>
+    <string-array name="cpp_test_9_question">
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+    <integer-array name="cpp_test_10_correct_answer">
+    <item>0</item>
+    <item>3</item>
+    <item>2</item>
+    <item>1</item>
+    <item>0</item>
+    <item>2</item>
+    <item>0</item>
+    <item>1</item>
+    <item>3</item>
+    <item>2</item>
+</integer-array>
+    <string-array name="cpp_test_10_question">
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+    <integer-array name="cpp_test_11_correct_answer">
+    <item>0</item>
+    <item>3</item>
+    <item>2</item>
+    <item>1</item>
+    <item>0</item>
+    <item>2</item>
+    <item>0</item>
+    <item>1</item>
+    <item>3</item>
+    <item>2</item>
+</integer-array>
+    <string-array name="cpp_test_11_question">
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+    <integer-array name="cpp_test_12_correct_answer">
+    <item>0</item>
+    <item>3</item>
+    <item>2</item>
+    <item>1</item>
+    <item>0</item>
+    <item>2</item>
+    <item>0</item>
+    <item>1</item>
+    <item>3</item>
+    <item>2</item>
+</integer-array>
+    <string-array name="cpp_test_12_question">
         <item></item>
         <item></item>
         <item></item>

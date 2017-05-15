@@ -30,8 +30,8 @@ public class Start extends AppCompatActivity
         setContentView(R.layout.activity_start);
         ListView listView_python = (ListView) findViewById(R.id.python_lesson);
         ListView listView_cpp = (ListView) findViewById(R.id.cpp_lesson);
-        String[] p_lesson = getResources().getStringArray(R.array.python_lesson_name);
-        final String[] c_lesson = getResources().getStringArray(R.array.python_lesson_name);
+        final String[] p_lesson = getResources().getStringArray(R.array.python_lesson_name);
+        final String[] c_lesson = getResources().getStringArray(R.array.cpp_lesson_name);
         ArrayAdapter<String> pythonAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, p_lesson);
         ArrayAdapter<String> cppAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, c_lesson);
 
@@ -57,19 +57,39 @@ public class Start extends AppCompatActivity
         tabHost.addTab(tabSpec);
         tabHost.setCurrentTab(0);
 
-        /*listView_cpp.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        listView_cpp.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View itemClicked, int position,
                                     long id) {
                 TextView textView = (TextView) itemClicked;
-                String strText = textView.getText().toString(); // получаем текст нажатого элемента
-                int num = Integer.parseInt(strText);
-                Intent intent = new Intent(Start.this, Test.class);
+                String strText = textView.getText().toString();
+                int num;
+                for(num = 0; num < 12; num++){
+                    if(strText.equals(c_lesson[num])) break;
+                }
+                Intent intent = new Intent(Start.this, Testing.class);
                 intent.putExtra("num", num);
-                intent.putExtra("lang", tabHost.getCurrentTabTag());
+                intent.putExtra("lang", tabHost.getCurrentTab());
                 startActivity(intent);
             }
-        });*/
+        });
+
+        listView_python.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View itemClicked, int position,
+                                    long id) {
+                TextView textView = (TextView) itemClicked;
+                String strText = textView.getText().toString();
+                int num;
+                for(num = 0; num < 12; num++){
+                    if(strText.equals(p_lesson[num])) break;
+                }
+                Intent intent = new Intent(Start.this, Testing.class);
+                intent.putExtra("num", num);
+                intent.putExtra("lang", tabHost.getCurrentTab());
+                startActivity(intent);
+            }
+        });
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(

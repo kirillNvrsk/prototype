@@ -51,7 +51,7 @@ public class Book extends AppCompatActivity
         tabHost.setCurrentTab(0);
 
 
-        cppLessonName = getResources().getStringArray(R.array.cpp_book_name);
+        cppLessonName = getResources().getStringArray(R.array.cpp_lesson_name);
         cppLessonText = getResources().getStringArray(R.array.cpp_book_str);
 
         pythonLessonName = getResources().getStringArray(R.array.python_lesson_name);

@@ -22,7 +22,6 @@
         <activity
             android:name=".Start"
             android:label="@string/title_activity_start"
-            android:noHistory="true"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Book"
@@ -50,7 +49,7 @@
             android:noHistory="true"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Test"
+            android:name=".Testing"
             android:label="Тест"
             android:noHistory="true"/>
     </application>
