@@ -1,6 +1,5 @@
 package com.kirillprog.s1.prot;
 
-<<<<<<< HEAD
 import android.support.v7.app.AppCompatActivity;
 
 public class Test extends AppCompatActivity {}
@@ -191,10 +190,5 @@ public class Test extends AppCompatActivity {
     }
 }
 /*/
-=======
-    }*/
-
-
->>>>>>> origin/0.1
 
 

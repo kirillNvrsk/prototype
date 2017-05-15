@@ -55,7 +55,7 @@ public class Book extends AppCompatActivity
         cppLessonText = getResources().getStringArray(R.array.cpp_book_str);
 
         pythonLessonName = getResources().getStringArray(R.array.python_lesson_name);
-        pythonLessonText = getResources().getStringArray(R.array.python_lesson_name);
+        pythonLessonText = getResources().getStringArray(R.array.python_lesson_1);
 
 
         Map<String, String> map;
